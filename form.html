@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Test</title>
+</head>
+<body>
+
+<form method="post">
+    <label for="">
+        <p>
+            url <input type="url"> <br>
+            color <input type="color"><br>
+            date <input type="date" name="myDate" id="myDate"><br>
+            <input type="text" placeholder="请输入用户名"><br>
+            <input type="password" placeholder="请输入密码">
+        </p>
+        <p>
+            搜索：<input type="search">
+        </p>
+        <p>
+            Range <input type="range" min="0" max="100" value="33" step="20">
+        </p>
+        <p>
+            number <input type="number" min="0" max="100" step="5">
+        </p>
+        邮箱：<input type="email">
+        <input type="submit">
+    </label>
+</form>
+
+<form action="" enctype="multipart/form-data">
+    <label for="">
+        <fieldset >
+            <legend>基本信息</legend>
+            姓名：<input type="text">
+            身高：<input type="text">
+            年龄：<input type="text">
+            性别：<input type="text">
+        </fieldset>
+    </label>
+    <p>
+        <input type="file">
+    </p>
+    <label for="mySelect">
+        <textarea name="myText" id="myText" cols="30" rows="10">
+            Something
+        </textarea>
+        <select name="newName" id="mySelect">
+            <optgroup label="水果">
+                <option value="banana">香蕉</option>
+                <option value="pitch">桃子</option>
+                <option value="watermelon" selected>西瓜</option>
+            </optgroup>
+            <optgroup label="蔬菜">
+                <option value="bc">白菜</option>
+                <option value="hg">黄瓜</option>
+                <option value="lb">萝卜</option>
+            </optgroup>
+        </select>
+    </label>
+</form>
+
+<form action="">
+    <label for="eat"></label><input id="eat" type="checkbox">吃
+    <label for="drink"></label><input type="checkbox" id="drink">喝
+    <label for="sleep"></label><input type="checkbox" id="sleep" checked>睡
+    <label for="play"></label><input type="checkbox" id="play" disabled>玩
+</form>
+
+<form action="" name="myForm">
+    姓名：<label>
+    <input type="text">
+    <br>
+    密码： <input type="password">
+    <br>
+    性别：<label for="male">男</label><input type="radio" name="sex" id="male" checked> <label for="female">女</label> <input
+        type="radio" name="sex" id="female">
+    <br>
+    <input type="submit" value="登陆">
+    <button>我是个按钮</button>
+</label>
+</form>
+</body>
+</html>
